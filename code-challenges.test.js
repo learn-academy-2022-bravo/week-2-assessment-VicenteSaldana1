@@ -14,9 +14,9 @@
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const numbersArray1 = [6, 7, 8, 9, 10]
-// Expected output: [18, 21, 24, 27, 30]
-const numbersArray2 = [24, 27, 30, 33, 36]
+// const numbersArray1 = [6, 7, 8, 9, 10]
+// // Expected output: [18, 21, 24, 27, 30]
+// const numbersArray2 = [24, 27, 30, 33, 36]
 // Expected output: [72, 81, 90, 99, 108]
 
 describe ("multBy3", () => {
@@ -55,12 +55,12 @@ const multBy3 = (array) => {
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const num1 = 15
-// Expected output: "15 is divisible by three"
-const num2 = 0
-// Expected output: "0 is divisible by three"
-const num3 = -7
-// Expected output: "-7 is not divisible by three"
+// const num1 = 15
+// // Expected output: "15 is divisible by three"
+// const num2 = 0
+// // Expected output: "0 is divisible by three"
+// const num3 = -7
+// // Expected output: "-7 is not divisible by three"
 
 describe ("divBy3", () => {
   it ("takes a number as an argument and decides if the number is evenly divisble by three or not.", () => {
@@ -90,9 +90,9 @@ const divBy3 = (number) => {
     return `${number} is not divisible by three`
   }
 }
-console.log (divBy3(num1))
-console.log (divBy3(num2))
-console.log (divBy3(num3))
+// console.log (divBy3(num1))
+// console.log (divBy3(num2))
+// console.log (divBy3(num3))
 
 // Succesful Test Result
 // multBy3
@@ -107,11 +107,11 @@ console.log (divBy3(num3))
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
 // a) Create a test with expect statements for each of the variables provided.
-
-const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
-// Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
-// Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
+//
+// const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+// // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+// const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
+// // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
 
 describe ("capsOnly", () => {
   it ("takes in an array of words and returns an array with all the words capitalized.", () => {
@@ -137,8 +137,8 @@ describe ("capsOnly", () => {
 const capsOnly = (array) => {
     return array.map(value => value.charAt(0).toUpperCase() + value.slice(1))
 }
-console.log(capsOnly(randomNouns1))
-console.log(capsOnly(randomNouns2))
+// console.log(capsOnly(randomNouns1))
+// console.log(capsOnly(randomNouns2))
 
 // Test Result- Passed
 // multBy3
@@ -156,12 +156,12 @@ console.log(capsOnly(randomNouns2))
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const vowelTester1 = "learn"
-// Expected output: 1
-const vowelTester2 = "academy"
-// Expected output: 0
-const vowelTester3 = "challenges"
-// Expected output: 2
+// const vowelTester1 = "learn"
+// // Expected output: 1
+// const vowelTester2 = "academy"
+// // Expected output: 0
+// const vowelTester3 = "challenges"
+// // Expected output: 2
 
 describe ("vowelIndex", () => {
   it ("takes in a string and logs the index of the first vowel.", () => {
@@ -189,12 +189,9 @@ describe ("vowelIndex", () => {
 // Expected output : 1 , 0, 2
 // Note for Instructor: This challenge question took me over an hour to figure out, and I am still a bit confused on the function portion below. I had several classmates help me work through the remainder of the challenge once I got stuck after my if statement, around line 199 or so. I also tried using all of my resources through google but for some reason it was really difficult to find concrete instructions on how to solve this problem.
 
-
-const vowels = ['a', 'e', 'i', 'o', 'u'];
-console.log(vowels);
-
 const vowelIndex = (value) => {
   let foundIndexes = []
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
   for(let i = 0; i < value.length ; i++) {
     if (vowels.indexOf(value[i]) > -1){
       foundIndexes.push(i);
@@ -202,9 +199,9 @@ const vowelIndex = (value) => {
   }
   return foundIndexes.sort()[0]
 }
-console.log(vowelIndex(vowelTester1))
-console.log(vowelIndex(vowelTester2))
-console.log(vowelIndex(vowelTester3))
+// console.log(vowelIndex(vowelTester1))
+// console.log(vowelIndex(vowelTester2))
+// console.log(vowelIndex(vowelTester3))
 
 // Succesful Test Result
 // multBy3
